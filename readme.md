@@ -1,3 +1,3 @@
 # BlueSpeed
 
-Link to page: [title](pixelate.github.io/electric)
+Link to page: [Electric](pixelate.github.io/electric)
