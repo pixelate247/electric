@@ -1,3 +1,3 @@
 # BlueSpeed
 
-Link to page: https://coolcheeseguy.github.io/mathforschool
+Link to page: [title](pixelate.github.io/electric)
