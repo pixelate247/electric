@@ -15,6 +15,7 @@
             height: 100%;
             overflow: hidden;
             position: relative;
+            background-color: black;
         }
 
         .background {
@@ -82,11 +83,11 @@
     <!-- Color Picker for Shapes -->
     <div class="slider-container">
         <input type="color" id="colorPicker" value="#0000ff">
-        <input type="color" id="BGcolorPicker" value="#00008B">
+        <!-- <input type="color" id="BGcolorPicker" value="#00008B"> -->
     </div>
 
     <!-- Sliders for Background Color -->
-    <div class="background-slider-container">
+    <!-- <div class="background-slider-container">
         <label for="rSlider">Red:</label>
         <input type="range" id="rSlider" min="0" max="255" value="0">
         <br>
@@ -95,18 +96,18 @@
         <br>
         <label for="bSlider">Blue:</label>
         <input type="range" id="bSlider" min="0" max="255" value="0">
-    </div>
+    </div> -->
 
     <script>
         const colorPicker = document.getElementById('colorPicker');
-        const BGcolorPicker = document.getElementById('BGcolorPicker');
+        // const BGcolorPicker = document.getElementById('BGcolorPicker');
         const rSlider = document.getElementById('rSlider');
         const gSlider = document.getElementById('gSlider');
         const bSlider = document.getElementById('bSlider');
 
         // Function to update the background color based on the sliders
         function updateBackgroundColor() {
-            const r = rSlider.value;
+            /* const r = rSlider.value;
             const g = gSlider.value;
             const b = bSlider.value;
 
@@ -120,7 +121,7 @@
             const bb = parseInt(BGcolorPicker.substr(5,2), 16)
             //console.log(`red: ${br}, green: ${bg}, blue: ${bb}`)
             
-            document.body.style.backgroundColor = 'rgb(`${br}, ${bg}, ${bb}`)';
+            document.body.style.backgroundColor = 'rgb(`${br}, ${bg}, ${bb}`)'; */
         }
 
         // Function to create a random shape with slightly altered color based on the selected color
@@ -170,15 +171,15 @@
         }
 
         // Generate random shapes every 1.5 seconds
-        setInterval(createRandomShape, 1500);
+        setInterval(createRandomShape, 1200);
 
         // Update the background color whenever the slider values change
-        rSlider.addEventListener('input', updateBackgroundColor);
+        /* rSlider.addEventListener('input', updateBackgroundColor);
         gSlider.addEventListener('input', updateBackgroundColor);
         bSlider.addEventListener('input', updateBackgroundColor);
 
         // Set the initial background color
-        updateBackgroundColor();
+        updateBackgroundColor(); */
     </script>
 </body>
 </html>
