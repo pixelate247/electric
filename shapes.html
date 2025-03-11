@@ -82,7 +82,7 @@
     <!-- Color Picker for Shapes -->
     <div class="slider-container">
         <input type="color" id="colorPicker" value="#0000ff">
-        <input type="color" id="BGcolorPicker" value="#000000">
+        <input type="color" id="BGcolorPicker" value="#00008B">
     </div>
 
     <!-- Sliders for Background Color -->
@@ -114,7 +114,13 @@
             
             // Apply the background color
             // document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-            document.body.style.backgroundColor = BGselectedColor;
+
+            const br = parseInt(BGcolorPicker.substr(1,2), 16)
+            const bg = parseInt(BGcolorPicker.substr(3,2), 16)
+            const bb = parseInt(BGcolorPicker.substr(5,2), 16)
+            //console.log(`red: ${br}, green: ${bg}, blue: ${bb}`)
+            
+            document.body.style.backgroundColor = 'rgb(`${br}, ${bg}, ${bb}`)';
         }
 
         // Function to create a random shape with slightly altered color based on the selected color
